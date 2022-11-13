@@ -7,6 +7,7 @@ import { createRouter, createWebHistory } from "vue-router";
      { path: '/transitiongroup', component:()=>import("../pages/Transitiongroup.vue")  },
      { path: '/slots', component:()=>import("../pages/Slots.vue")  },
      { path: '/teleports', component:()=>import("../pages/Teleports.vue")  },
+     { path: '/keepalive', component:()=>import("../pages/Keepalive.vue")  },
 
  ]
 
