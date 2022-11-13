@@ -1,12 +1,12 @@
 <script setup>
-import { KeepAlive, onMounted, ref, Transition } from 'vue';
+import { KeepAlive, onMounted, provide, ref, Transition } from 'vue';
 import { useStore } from 'vuex';
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './pages/TheWelcome.vue'
 import Login from './pages/Login.vue';
 import { RouterView } from 'vue-router';
 
-const token = ref(null);
+const token = ref('Vue js Provide İnject');
 const  user = ref({email:null,password:null});
 const store = useStore();
 
@@ -17,6 +17,7 @@ const onAdd = (e) => {
   store.dispatch("login/addlogin",{token:user.value,role:"Admin"});
 };
 
+provide('token',token);
 
 </script>
 

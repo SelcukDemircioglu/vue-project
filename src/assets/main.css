@@ -25,5 +25,8 @@ a,
     place-items: center;
   }
 
+  button{
+    max-height: 3rem;
+  }
  
 }
