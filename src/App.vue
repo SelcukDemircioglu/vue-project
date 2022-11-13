@@ -4,12 +4,12 @@ import { useStore } from 'vuex';
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './pages/TheWelcome.vue'
 import Login from './pages/Login.vue';
-import { RouterView } from 'vue-router';
+import { RouterView, useRouter } from 'vue-router';
 
 const token = ref('Vue js Provide İnject');
 const  user = ref({email:null,password:null});
 const store = useStore();
-
+const router = useRouter();
 
  
 
@@ -22,6 +22,7 @@ provide('token',token);
 </script>
 
 <template>
+  <button class="btn btn-primary  text-center" @click="router.push('/')">Anasayfa</button>
 <RouterView v-slot="{ Component }">
   <template v-if="Component">
     <Transition name="slide-fade"    >
