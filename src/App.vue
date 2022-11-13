@@ -39,7 +39,7 @@ provide('token',token);
     </Transition>
   </template>
 </RouterView>
-    {{store.state.login.token}}
+    
 </template>
 
 <style scoped>

@@ -4,7 +4,9 @@ import { createRouter, createWebHistory } from "vue-router";
  const routes=[
      { path: '/anasayfa', component:()=>import("../pages/TheWelcome.vue")  },
      { path: '/', component:()=>import("../pages/Login.vue")  },
-     { path: '/Transitiongroup', component:()=>import("../pages/Transitiongroup.vue")  },
+     { path: '/transitiongroup', component:()=>import("../pages/Transitiongroup.vue")  },
+     { path: '/slots', component:()=>import("../pages/Slots.vue")  },
+     { path: '/teleports', component:()=>import("../pages/Teleports.vue")  },
 
  ]
 

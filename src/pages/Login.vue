@@ -2,7 +2,7 @@
     
     
         <div class="w-100 d-flex justify-content-center align-items-center">
-           <div class="col-2 shadow border p-5 d-flex flex-column align-items-center " >
+           <div class="shadow w-25 border p-5 d-flex flex-column align-items-center " >
                  <h6 >Kullanıcı Adı</h6>
                  <input :value="email" @input="emit('update:email',$event.target.value)" class="form-control w-100"   /> 
                   <h6 class="mt-1" >Şifre</h6>
