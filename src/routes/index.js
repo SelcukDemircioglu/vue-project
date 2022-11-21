@@ -8,8 +8,8 @@ import { createRouter, createWebHistory } from "vue-router";
      { path: '/slots', component:()=>import("../pages/Slots.vue")  },
      { path: '/teleports', component:()=>import("../pages/Teleports.vue")  },
      { path: '/keepalive', component:()=>import("../pages/Keepalive.vue")  },
-
- ]
+     { path: '/hyperscript', component:()=>import("../pages/Hyperscript.vue")  },
+ ];
 
 
  const router = createRouter({
